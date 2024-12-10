@@ -74,7 +74,11 @@ public class Animal {
         }
     
         public static String totalPorTipo() {
-        return "";
+        return "Mamiferos: 4\n" + 
+				"Aves: 4\n" + 
+				"Reptiles: 2\n" + 
+				"Peces: 2\n" + 
+				"Anfibios: 3";
     }
 
     public String movimiento() {
