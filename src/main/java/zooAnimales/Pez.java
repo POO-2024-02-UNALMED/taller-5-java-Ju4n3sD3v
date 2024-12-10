@@ -13,8 +13,8 @@ public class Pez extends Animal{
     private ArrayList<Zona> zona;
 
     private static ArrayList<Pez> listado;
-    public int salmones;
-    public int bacalaos;
+    public static int salmones;
+    public static int bacalaos;
     private String colorEscamas;
     private int cantidadAletas;
 
