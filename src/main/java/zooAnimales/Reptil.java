@@ -8,15 +8,15 @@ public class Reptil extends Animal{
     private static int totalAnimales;        
     private String nombre;
     private int edad;
-    private String habitat;
+    private static String habitat;
     private String genero;
     private ArrayList<Zona> zona;
 
     private static ArrayList<Reptil> listado;
     public static int iguanas;
     public static int serpientes;
-    private String colorEscamas;
-    private int largoCola;
+    private static String colorEscamas;
+    private static int largoCola;
 
     public Reptil() {}
 
@@ -58,7 +58,7 @@ public int getTotalAnimales() {
     }
 
     public void setHabitat(String habitat) {
-        this.habitat = habitat;
+        Reptil.habitat = habitat;
     }
 
     public String getGenero() {
@@ -90,7 +90,7 @@ public int getTotalAnimales() {
     }
 
     public void setColorEscamas(String colorEscamas) {
-        this.colorEscamas = colorEscamas;
+        Reptil.colorEscamas = colorEscamas;
     }
 
     public int getLargoCola() {
@@ -98,7 +98,7 @@ public int getTotalAnimales() {
     }
 
     public void setLargoCola(int largoCola) {
-        this.largoCola = largoCola;
+        Reptil.largoCola = largoCola;
     }
 
     @Override
@@ -106,7 +106,7 @@ public int getTotalAnimales() {
         return "reptar";
     }
 
-    public Reptil crearIguana(String n, int e, String g) {
+    public static Reptil crearIguana(String n, int e, String g) {
         colorEscamas = "verde";
         largoCola = 3;
         habitat = "humedal";
@@ -116,7 +116,7 @@ public int getTotalAnimales() {
         return r;
     }
 
-    public Reptil crearSerpiente(String n, int e, String g) {
+    public static Reptil crearSerpiente(String n, int e, String g) {
         colorEscamas = "blanco";
         largoCola = 1;
         habitat = "jungla";

@@ -8,14 +8,14 @@ public class Ave extends Animal{
     private static int totalAnimales;        
     private String nombre;
     private int edad;
-    private String habitat;
+    private static String habitat;
     private String genero;
     private ArrayList<Zona> zona;
 
     private static ArrayList<Ave> listado;
     public static int halcones;
     public static int aguilas;
-    private String colorPlumas;
+    private static String colorPlumas;
 
     public Ave() {}
 
@@ -56,7 +56,7 @@ public int getTotalAnimales() {
     }
 
     public void setHabitat(String habitat) {
-        this.habitat = habitat;
+        Ave.habitat = habitat;
     }
 
     public String getGenero() {
@@ -88,7 +88,7 @@ public int getTotalAnimales() {
     }
 
     public void setColorPlumas(String colorPlumas) {
-        this.colorPlumas = colorPlumas;
+        Ave.colorPlumas = colorPlumas;
     }
 
     @Override
@@ -96,7 +96,7 @@ public int getTotalAnimales() {
         return "volar";
     }
 
-    public Ave crearHalcon(String n, int e, String g) {
+    public static Ave crearHalcon(String n, int e, String g) {
         colorPlumas = "cafe glorioso";
         habitat = "montanas";
         halcones++;
@@ -105,7 +105,7 @@ public int getTotalAnimales() {
         return a;
     }
 
-    public Ave crearAguila(String n, int e, String g) {
+    public static Ave crearAguila(String n, int e, String g) {
         colorPlumas = "blanco y amarillo";
         habitat = "montanas";
         aguilas++;

@@ -8,15 +8,15 @@ public class Mamifero extends Animal{
     private static int totalAnimales;        
     private String nombre;
     private int edad;
-    private String habitat;
+    private static String habitat;
     private String genero;
     private static ArrayList<Zona> zona;
 
     private static ArrayList<Mamifero> listado;
     public static int caballos;
     public static int leones;
-    private boolean pelaje;
-    private int patas;
+    private static boolean pelaje;
+    private static int patas;
 
     public Mamifero() {}
 
@@ -58,7 +58,7 @@ public int getTotalAnimales() {
     }
 
     public void setHabitat(String habitat) {
-        this.habitat = habitat;
+        Mamifero.habitat = habitat;
     }
 
     public String getGenero() {
@@ -93,10 +93,10 @@ public int getTotalAnimales() {
     }
 
     public void setPatas(int patas) {
-        this.patas = patas;
+        Mamifero.patas = patas;
     }
 
-    public Mamifero crearCaballo(String n, int e, String g) {
+    public static Mamifero crearCaballo(String n, int e, String g) {
         pelaje = true;
         patas = 4;
         habitat = "pradera";
@@ -106,7 +106,7 @@ public int getTotalAnimales() {
         return m;
     }
 
-    public Mamifero crearLeon(String n, int e, String g) {
+    public static Mamifero crearLeon(String n, int e, String g) {
         pelaje = true;
         patas = 4;
         habitat = "selva";

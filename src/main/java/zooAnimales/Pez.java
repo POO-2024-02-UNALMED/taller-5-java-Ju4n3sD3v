@@ -8,15 +8,15 @@ public class Pez extends Animal{
     private static int totalAnimales;        
     private String nombre;
     private int edad;
-    private String habitat;
+    private static String habitat;
     private String genero;
     private ArrayList<Zona> zona;
 
     private static ArrayList<Pez> listado;
     public static int salmones;
     public static int bacalaos;
-    private String colorEscamas;
-    private int cantidadAletas;
+    private static String colorEscamas;
+    private static int cantidadAletas;
 
     public Pez() {}
 
@@ -58,7 +58,7 @@ public int getTotalAnimales() {
     }
 
     public void setHabitat(String habitat) {
-        this.habitat = habitat;
+        Pez.habitat = habitat;
     }
 
     public String getGenero() {
@@ -90,7 +90,7 @@ public int getTotalAnimales() {
     }
 
     public void setColorEscamas(String colorEscamas) {
-        this.colorEscamas = colorEscamas;
+        Pez.colorEscamas = colorEscamas;
     }
 
     public int getCantidadAletas() {
@@ -98,7 +98,7 @@ public int getTotalAnimales() {
     }
 
     public void setCantidadAletas(int cantidadAletas) {
-        this.cantidadAletas = cantidadAletas;
+        Pez.cantidadAletas = cantidadAletas;
     }
 
     @Override
@@ -106,7 +106,7 @@ public int getTotalAnimales() {
         return "nadar";
     }
 
-    public Pez crearSalmon(String n, int e, String g) {
+    public static Pez crearSalmon(String n, int e, String g) {
         colorEscamas = "rojo";
         cantidadAletas = 6;
         habitat = "oceano";
@@ -116,7 +116,7 @@ public int getTotalAnimales() {
         return p;
     }
 
-    public Pez crearBacalao(String n, int e, String g) {
+    public static Pez crearBacalao(String n, int e, String g) {
         colorEscamas = "gris";
         cantidadAletas = 6;
         habitat = "oceano";

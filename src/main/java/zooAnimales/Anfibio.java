@@ -8,15 +8,15 @@ public class Anfibio extends Animal{
     private static int totalAnimales;        
     private String nombre;
     private int edad;
-    private String habitat;
+    private static String habitat;
     private String genero;
     private ArrayList<Zona> zona;
 
     private static ArrayList<Anfibio> listado;
     public static int ranas;
     public static int salamandras;
-    private String colorPiel;
-    private boolean venenoso;
+    private static String colorPiel;
+    private static boolean venenoso;
 
     public Anfibio() {}
 
@@ -58,7 +58,7 @@ public int getTotalAnimales() {
     }
 
     public void setHabitat(String habitat) {
-        this.habitat = habitat;
+        Anfibio.habitat = habitat;
     }
 
     public String getGenero() {
@@ -90,7 +90,7 @@ public int getTotalAnimales() {
     }
 
     public void setColorPiel(String colorPiel) {
-        this.colorPiel = colorPiel;
+        Anfibio.colorPiel = colorPiel;
     }
 
     public boolean isVenenoso() {
@@ -102,7 +102,7 @@ public int getTotalAnimales() {
         return "saltar";
     }
 
-    public Anfibio crearRana(String n, int e, String g) {
+    public static Anfibio crearRana(String n, int e, String g) {
         colorPiel = "rojo";
         venenoso = true;
         habitat = "humedal";
@@ -112,7 +112,7 @@ public int getTotalAnimales() {
         return an;
     }
 
-    public Anfibio crearSalamandra(String n, int e, String g) {
+    public static Anfibio crearSalamandra(String n, int e, String g) {
         colorPiel = "negro y amarillo";
         venenoso = false;
         habitat = "jungla";
