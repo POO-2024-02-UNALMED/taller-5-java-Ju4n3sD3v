@@ -9,9 +9,7 @@ public class Zona {
     private Zoologico[] zoo;
     private ArrayList<Animal> animales;    
 
-    public Zona() {
-        zoo[0] = null;
-    }
+    public Zona() {}
 
     public Zona(String n, Zoologico z) {
         nombre = n;
