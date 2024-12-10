@@ -109,7 +109,7 @@ public int getTotalAnimales() {
     public Pez crearSalmon(String n, int e, String g) {
         colorEscamas = "rojo";
         cantidadAletas = 6;
-        habitat = "océano";
+        habitat = "oceano";
         salmones++;
         Pez p = new Pez(n, e, habitat, g, colorEscamas, cantidadAletas);
         Pez.listado.add(p);
@@ -119,7 +119,7 @@ public int getTotalAnimales() {
     public Pez crearBacalao(String n, int e, String g) {
         colorEscamas = "gris";
         cantidadAletas = 6;
-        habitat = "océano";
+        habitat = "oceano";
         bacalaos++;
         Pez p = new Pez(n, e, habitat, g, colorEscamas, cantidadAletas);
         Pez.listado.add(p);

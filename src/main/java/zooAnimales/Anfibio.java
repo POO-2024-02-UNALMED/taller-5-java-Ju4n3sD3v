@@ -13,8 +13,8 @@ public class Anfibio extends Animal{
     private ArrayList<Zona> zona;
 
     private static ArrayList<Anfibio> listado;
-    public int ranas;
-    public int salamandras;
+    public static int ranas;
+    public static int salamandras;
     private String colorPiel;
     private boolean venenoso;
 
