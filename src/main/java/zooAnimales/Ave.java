@@ -97,8 +97,8 @@ public int getTotalAnimales() {
     }
 
     public Ave crearHalcon(String n, int e, String g) {
-        colorPlumas = "café glorioso";
-        habitat = "montañas";
+        colorPlumas = "cafe glorioso";
+        habitat = "montanas";
         halcones++;
         Ave a = new Ave(n, e, habitat, g, colorPlumas);
         Ave.listado.add(a);
@@ -107,7 +107,7 @@ public int getTotalAnimales() {
 
     public Ave crearAguila(String n, int e, String g) {
         colorPlumas = "blanco y amarillo";
-        habitat = "montañas";
+        habitat = "montanas";
         aguilas++;
         Ave a = new Ave(n, e, habitat, g, colorPlumas);
         Ave.listado.add(a);
