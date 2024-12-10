@@ -86,10 +86,8 @@ public class Animal {
     }
 
     public String toString() {
-        if (zona.isEmpty()) {
+        
             return "Mi nombre es "+getNombre()+", tengo una edad de "+getEdad()+", habito en "+getHabitat()+" y mi genero es "+getGenero();
-        }else{
-        return "Mi nombre es "+getNombre()+", tengo una edad de "+getEdad()+", habito en "+getHabitat()+" y mi genero es "+getGenero()+", la zona en la que me ubico es "+getZona().get(0)+", en el "+getZona().get(0).getZoo();
-        }
+        
     }
 }
